@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VYTA — Politique de confidentialité</title>
+<meta name="description" content="Ce que l'application VYTA garde, ce qui sort du téléphone, et comment tout emporter ou tout effacer.">
+<style>
+:root { --fond: #ffffff; --texte: #1b1f2a; --discret: #5b6275; --filet: #dde1ea; --lien: #0b6e55; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #12151c; --texte: #eef0f5; --discret: #a3a9b8; --filet: #2a3040; --lien: #5fd3a8; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 16px 4rem; }
+nav { font-size: .95rem; margin-bottom: 1.5rem; }
+nav a { margin-right: 1rem; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; }
+h2 { font-size: 1.3rem; margin: 2.2rem 0 .6rem; padding-top: 1rem; border-top: 1px solid var(--filet); }
+h3 { font-size: 1.08rem; margin: 1.6rem 0 .4rem; }
+p, li { overflow-wrap: anywhere; }
+a { color: var(--lien); }
+code { font-size: .9em; }
+.tableau { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--filet); }
+th { color: var(--discret); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">VYTA</a><a href="assistance.html">Assistance</a><a href="confidentialite.html">Confidentialité</a></nav>
+<h1>Politique de confidentialité de VYTA</h1>
+<p><strong>Version de l'app concernée : 1.0 (build 1) · Dernière mise à jour : 12 octobre 2026</strong></p>
+<h2>En résumé</h2>
+<p>VYTA est une application de suivi d'entraînement et d'alimentation qui fonctionne sur votre téléphone. Elle n'a <strong>pas de compte, pas d'inscription et pas de serveur</strong>. Nous ne recevons aucune de vos données : nous n'avons aucun moyen technique de les lire.</p>
+<p>Deux services extérieurs sont appelés, et seulement pour ce qui est décrit plus bas : <strong>Open Food Facts</strong> pour les fiches d'aliments, et <strong>Apple</strong> pour les fonds de carte, l'abonnement VYTA Pro et, dans un cas précis, la reconnaissance de la parole.</p>
+<h2>Qui est responsable de ce traitement</h2>
+<p>Guillaume Sourzat, développeur indépendant.</p>
+<p>Contact : <a href="mailto:vyta.contact@icloud.com">vyta.contact@icloud.com</a></p>
+<p>Nous concevons l'application et choisissons les deux services extérieurs qu'elle appelle (décrits plus bas). Nous ne recevons, ne stockons et ne consultons aucune de vos données.</p>
+<h2>Sur quelle base</h2>
+<p>Certaines données que l'application traite sont des <strong>données de santé</strong> (fréquence cardiaque, poids, sommeil, douleurs déclarées). Le règlement européen sur la protection des données (RGPD, article 9) les protège particulièrement.</p>
+<ul>
+<li><strong>Santé, microphone, reconnaissance vocale, caméra, localisation</strong> : ces accès reposent sur votre <strong>consentement explicite</strong>, donné dans les fenêtres d'autorisation d'iOS au moment où la fonction en a besoin. Vous pouvez le retirer à tout moment dans les réglages d'iOS (Confidentialité et sécurité, ou dans l'application Santé) ; l'application continue alors de fonctionner sans la donnée concernée.</li>
+<li><strong>Ce que vous saisissez</strong> (séances, repas, mesures, douleurs) : vous l'enregistrez vous-même, pour votre propre suivi, sur votre téléphone.</li>
+<li><strong>Les recherches envoyées à Open Food Facts</strong> : elles ne partent que lorsque vous cherchez ou scannez un aliment, parce que le service que vous demandez en a besoin.</li>
+</ul>
+<h2>Ce que l'application enregistre, et où</h2>
+<p>Vos séances, vos charges, vos répétitions, vos repas, vos relevés de poids et de mesures, vos douleurs déclarées et les tracés GPS de vos courses sont écrits dans un fichier local, dans l'espace privé de l'application sur votre téléphone.</p>
+<p>Il n'y a <strong>aucune synchronisation dans un nuage</strong> : rien n'est recopié ailleurs, et rien ne circule entre deux téléphones. L'application n'embarque <strong>aucune bibliothèque extérieure</strong> — ni mesure d'audience, ni publicité, ni rapport de plantage. Personne ne sait quand vous ouvrez l'application, ni ce que vous y regardez.</p>
+<h2>Ce qui sort de votre téléphone, et quand</h2>
+<p>Ce sont les <strong>seules</strong> transmissions que l'application déclenche.</p>
+<h3>Open Food Facts</h3>
+<div class="tableau"><table>
+<thead><tr>
+<th>Quand</th>
+<th>Ce qui part</th>
+</tr></thead><tbody>
+<tr><td>Vous scannez un produit inconnu de la base embarquée, ou dont la fiche a plus de sept jours</td><td>Les chiffres du code-barres</td></tr>
+<tr><td>Vous tapez au moins trois caractères dans la recherche d'aliments — y compris quand la base embarquée a des réponses</td><td>Les mots saisis</td></tr>
+<tr><td>Vous ouvrez la photo d'une étiquette</td><td>La demande de cette image</td></tr>
+<tr><td>Vous validez des aliments après une dictée de repas</td><td>Les noms retenus, via la même recherche</td></tr>
+</tbody></table></div>
+<p>Open Food Facts voit donc <strong>votre adresse IP et un nom d'application (« VYTA/1.0 »)</strong>. Aucun repas, aucune donnée de santé, aucun identifiant d'utilisateur ne lui est transmis. L'application lit cette base ; elle ne lui écrit rien.</p>
+<p>Open Food Facts est une base contributive publiée sous licence ODbL. Politique de confidentialité d'Open Food Facts : <a href="https://world.openfoodfacts.org/privacy">https://world.openfoodfacts.org/privacy</a></p>
+<h3>Apple</h3>
+<ul>
+<li><strong>Les fonds de carte.</strong> Quand vous regardez le tracé d'une course, la carte demande à Apple les tuiles de la zone parcourue. Le tracé lui-même n'est pas téléversé.</li>
+<li><strong>La dictée d'un repas.</strong> L'application demande d'abord une reconnaissance <strong>sur l'appareil</strong>. Quand le téléphone n'en est pas capable, iOS confie l'audio aux serveurs d'Apple, exactement comme la dictée du clavier. Une liste d'aide à la reconnaissance part avec : les marques et les noms de vos produits et de vos recettes. L'application ne conserve pas l'audio.</li>
+<li><strong>L'abonnement VYTA Pro.</strong> L'achat, l'essai et le renouvellement passent par l'App Store. Apple traite le paiement et indique seulement à l'application si l'abonnement est actif, et jusqu'à quand. VYTA ne reçoit ni votre carte, ni votre nom, ni votre identifiant Apple. Cette date de fin est gardée sur le téléphone.</li>
+</ul>
+<p>Ces traitements sont faits par Apple, selon sa propre politique de confidentialité (<a href="https://www.apple.com/fr/legal/privacy/">https://www.apple.com/fr/legal/privacy/</a>), et <strong>peuvent avoir lieu hors de l'Union européenne</strong>. Pour que rien ne parte chez Apple, il suffit de ne pas utiliser la dictée de repas, de ne pas ouvrir la carte d'une course et de ne pas s'abonner.</p>
+<p>Sans réseau, l'application fonctionne : seules la recherche en ligne et le scan d'un produit inconnu s'arrêtent.</p>
+<h2>Santé (HealthKit)</h2>
+<p>L'accès à Santé est <strong>facultatif</strong> et se refuse type par type, dans l'application Santé d'Apple. Si vous refusez, VYTA continue de fonctionner : elle estime ce qu'elle ne peut plus mesurer, et elle le dit à l'écran.</p>
+<p><strong>Ce que l'application lit :</strong> fréquence cardiaque, fréquence cardiaque de repos, variabilité cardiaque, énergie active, analyse du sommeil, poids, taille, date de naissance, sexe, et les entraînements déjà présents — ces derniers pour ne jamais écrire deux fois la même séance.</p>
+<p><strong>Ce que l'application écrit :</strong> vos séances et sorties cardio, sous forme d'entraînements (durée, énergie dépensée quand c'est l'application qui l'estime, distance et tracé des courses) ; et vos repas (calories, protéines, glucides, lipides, fibres).</p>
+<p><strong>L'énergie écrite est une estimation</strong>, calculée depuis votre fréquence cardiaque relevée ou depuis un forfait fondé sur votre poids et la durée. Elle est affichée avec un tilde dans l'application. Une énergie réellement <strong>mesurée</strong> par un appareil n'est jamais réécrite, pour ne pas la compter deux fois.</p>
+<p>Ces données ne quittent pas votre téléphone et Santé. Elles ne sont utilisées <strong>ni pour de la publicité, ni pour du marketing, ni pour de la revente</strong> : les règles de l'App Store l'interdisent, et l'application s'y tient. Santé, lui, peut synchroniser ses propres données par iCloud si vous l'avez activé ; cela se règle dans les réglages d'iOS.</p>
+<p>Ce que l'application a écrit dans Santé <strong>se supprime dans Santé</strong>, qui garde la main sur ses propres données.</p>
+<h2>Votre Apple Watch</h2>
+<p>La séance en cours, ses séries et son minuteur voyagent entre votre téléphone et votre montre appairée, par le lien direct d'Apple entre les deux appareils. Aucun serveur n'est dans la boucle, et rien n'atteint une montre qui n'est pas la vôtre.</p>
+<p>L'application montre conserve sur la montre l'état de la séance en cours et la donnée affichée par sa complication. Quand la montre suit la séance, c'est elle qui écrit l'entraînement dans Santé, une seule fois.</p>
+<h2>Caméra</h2>
+<p>L'aperçu de la caméra sert uniquement à lire un code-barres (EAN-13, EAN-8, UPC-E, Code 128). Seul le code lu est retenu — pour un produit alimentaire, une suite de chiffres. <strong>Aucune photo n'est prise, ni enregistrée, ni envoyée.</strong></p>
+<h2>Microphone</h2>
+<p>Le microphone ne s'active que pendant une dictée de repas que vous avez lancée. L'application ne conserve pas l'audio. Le traitement de la parole est décrit à « Apple » ci-dessus.</p>
+<h2>Localisation</h2>
+<p>La localisation ne démarre qu'au moment où vous lancez une course en extérieur, et s'arrête à la fin. Elle continue écran éteint et téléphone en poche : c'est ce qui permet d'enregistrer le tracé complet. Le tracé est gardé sur votre téléphone et écrit dans Santé ; il n'est envoyé à aucun serveur.</p>
+<h2>Notifications</h2>
+<p>Les notifications sont locales : elles sont posées par l'application sur votre téléphone, et <strong>aucun serveur de notification n'est utilisé</strong>. Elles annoncent la fin d'une récupération et les échéances d'une séance. Vous pouvez les refuser : l'application continue de fonctionner.</p>
+<h2>Combien de temps les données sont gardées</h2>
+<p>Tant que l'application est installée. Rien n'expire, rien n'est purgé à votre insu : un historique de trois ans reste un historique de trois ans.</p>
+<p>Pour vous protéger d'un fichier abîmé, l'application garde aussi, à côté de ses données et sur votre téléphone seulement, des <strong>copies de sécurité</strong> : au plus sept, la plus ancienne datant d'environ trois semaines, les plus anciennes étant effacées au fur et à mesure. Si une restauration a lieu, la base qu'elle remplace est mise de côté (deux au plus). Toutes partent avec l'application quand vous la désinstallez.</p>
+<h2>Emporter vos données</h2>
+<p>Réglages › « Exporter mes données » écrit un fichier <code>.zip</code> sur votre téléphone (<code>export.json</code> et cinq fichiers CSV : séances, séries, cardio, repas, mesures). Il ne sort du téléphone que si vous l'envoyez vous-même.</p>
+<p><strong>Ce fichier contient les tracés GPS de vos courses</strong>, c'est-à-dire des lieux réels. Le fichier qui l'accompagne le rappelle. Traitez-le comme une donnée sensible.</p>
+<p>C'est une copie à lire ailleurs, <strong>pas une sauvegarde</strong> : rien ne la relit dans l'application, et elle ne restaure rien.</p>
+<h2>Supprimer vos données</h2>
+<p><strong>Désinstallez l'application</strong> : son fichier de données part avec elle, ainsi que les copies de sécurité qu'elle garde à côté. Il n'y a rien à supprimer ailleurs, puisqu'il n'y a pas de compte, et rien à nous demander, puisque nous n'avons rien.</p>
+<p>Ce que l'application a écrit dans Santé se supprime dans Santé.</p>
+<h2>La sauvegarde de votre iPhone</h2>
+<p>Si la sauvegarde iCloud ou la sauvegarde par ordinateur est active, elle emporte le fichier de l'application avec le reste du téléphone. <strong>C'est iOS qui la fait, pas l'application</strong>, et cela se règle dans les réglages d'iOS. Une sauvegarde s'efface quand elle est remplacée ou supprimée, également depuis les réglages d'iOS.</p>
+<h2>Journaux techniques</h2>
+<p>L'application écrit des journaux techniques dans le système de journalisation d'iOS, sur votre téléphone. Ils gardent le fait (« une commande a été refusée ») et un code d'erreur, <strong>pas le contenu</strong> : les descriptions d'erreur brutes, les charges utiles de commande et les identifiants sont marqués comme privés, ce qui empêche iOS de les afficher hors débogage sur un Mac connecté. Ces journaux ne quittent pas le téléphone et ne nous sont jamais transmis.</p>
+<h2>Enfants</h2>
+<p>L'application n'est pas destinée aux enfants et ne leur propose aucune fonction. Aucune perte de poids n'est proposée avant 18 ans.</p>
+<h2>Ce que l'application n'est pas</h2>
+<p>VYTA <strong>n'est pas un dispositif médical</strong>. Elle ne pose aucun diagnostic, ne dépiste rien et ne surveille aucune pathologie. Ses chiffres sont des estimations calculées à partir de ce que vous déclarez et de ce que votre montre relève : ils situent, ils ne prescrivent pas, et ils ne remplacent l'avis d'aucun professionnel de santé.</p>
+<p>Un objectif de poids, un déficit calorique ou une reprise après blessure se parlent avec un médecin avant de se suivre. Si vous prenez un traitement, si vous êtes enceinte, ou si vous avez un problème cardiaque, rénal ou métabolique connu, parlez-en avant de suivre une cible calculée par l'application.</p>
+<h2>Vos droits</h2>
+<p>Vos données ne quittant pas votre téléphone et ne nous étant jamais transmises, nous ne détenons aucun fichier vous concernant : il n'y a rien dont nous puissions vous donner copie, rien que nous puissions rectifier ou effacer à votre place. Les droits d'accès, de rectification, d'effacement et de portabilité s'exercent donc directement dans l'application : consulter et corriger vos données sur ses écrans, les emporter par « Exporter mes données », les effacer en désinstallant l'application. Retirer une autorisation (Santé, micro, caméra, localisation) se fait à tout moment dans les réglages d'iOS.</p>
+<p>Pour toute question : <a href="mailto:vyta.contact@icloud.com">vyta.contact@icloud.com</a>.</p>
+<p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> (Commission nationale de l'informatique et des libertés, <a href="https://www.cnil.fr/fr/plaintes">https://www.cnil.fr/fr/plaintes</a>), ou de l'autorité de protection des données de votre pays de résidence.</p>
+<h2>Modifications de cette politique</h2>
+<p>Cette politique décrit la version indiquée en tête. Une version ultérieure de l'application qui changerait l'un de ces points sera accompagnée d'une mise à jour de ce texte et de sa date.</p>
+</main>
+</body>
+</html>
